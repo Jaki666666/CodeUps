@@ -1,0 +1,73 @@
+@use "global" as *;
+
+.hamburger {
+    width: rem(60);
+    z-index: 6;
+    width: rem(25);
+    height: rem(25);
+    cursor: pointer;
+
+    @include mq("md") {
+        display: none;
+    }
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger__line {
+    content: "";
+    background-color: $white;
+    width: rem(24);
+    height: rem(2);
+    position: absolute;
+    transition: top 0.4s ease-out, transform 0.4s ease-out, background-color 4s;
+}
+
+.hamburger__line--first {
+    top: rem(13);
+}
+
+.hamburger__line--second {
+    top: rem(20);
+}
+
+.hamburger__line--third {
+    top: rem(26);
+}
+
+// ハンバーガーメニューが開いている時
+.hamburger--opened {
+    width: rem(22);
+    height: rem(22);
+}
+
+.hamburger--opened .hamburger__line {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position:absolute;
+    background: white;
+    transition: top 0.4s ease-out, transform 0.4s ease-out, background-color 0.4s;
+    top:rem(24);
+}
+
+.hamburger--opened .hamburger__line--second {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.hamburger--opened .hamburger__line--third {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

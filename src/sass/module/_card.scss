@@ -1,0 +1,115 @@
+@use "global" as *;
+
+.card {
+    color: $black2;
+
+    @include mq("md") {
+        display: flex;
+        transition: color 0.3s;
+    }
+}
+
+.card:first-child {
+    position: relative;
+}
+
+.card:hover {
+    @include mq("md") {
+        color: $white;
+    }
+}
+
+.card:hover .card__text-wrapper {
+    @include mq("md") {
+        background-color: $black2;
+    }
+}
+
+.card__link {
+    @include mq("md") {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.card__icon {
+    max-width: rem(60);
+    width: 100%;
+    position: absolute;
+    top: rem(-16);
+    left: rem(-16);
+
+    @include mq("md") {
+        top: rem(-20);
+        left: rem(-15);
+    }
+}
+
+.card__img {
+    aspect-ratio: 335 / 223;
+
+    @include mq("md") {
+        aspect-ratio: 350 / 233;
+    }
+}
+
+.card__text-wrapper {
+    background: $white;
+    padding: rem(4) rem(23) rem(16) rem(23);
+
+    @include mq("md") {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        transition: background-color 0.3s;
+    }
+}
+
+.card__title {
+    font-size: rem(18);
+    font-weight: $medium;
+    line-height: calc(35 / 18);
+    letter-spacing: 0.05em;
+}
+
+.card__explanation {
+    font-size: rem(14);
+    line-height: calc(26 / 14);
+    letter-spacing: 0.07em;
+    margin-top: rem(2);
+
+    @include mq("md") {
+        margin-top: rem(5);
+    }
+}
+
+.card__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(7);
+
+    @include mq("md") {
+        margin-top: rem(10);
+    }
+}
+
+.card__category {
+    background: $yellow2;
+    font-size: rem(14);
+    line-height: calc(26 / 14);
+    letter-spacing: 0.07em;
+    color: $black3;
+    padding-left: rem(3);
+    padding-right: rem(3);
+
+    @include mq("md") {
+        padding-left: rem(6);
+        padding-right: rem(6);
+    }
+}
+
+.card__date {
+    font-size: rem(14);
+    line-height: calc(26 / 14);
+    letter-spacing: 0.07em;
+}

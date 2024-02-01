@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.news-list__inner.inner{
+    max-width: rem(640);
+
+    @include mq("md") {
+        max-width: rem(924);
+    }
+}
+
+.news-list__news{
+    @include mq("md") {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+.news-list__news:not(:first-child) {
+    margin-top: rem(31);
+}

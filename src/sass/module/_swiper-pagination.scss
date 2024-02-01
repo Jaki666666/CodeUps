@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: #c4c4c4;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: $yellow;
+}

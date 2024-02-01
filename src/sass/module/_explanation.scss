@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.explanation {
+    color: $white;
+}
+
+.explanation__inner.inner {
+    @include mq("md") {
+        max-width: rem(864);
+    }
+}
+
+.explanation__gist{
+    padding:rem(54) rem(10) rem(32) rem(10);
+    position:relative;
+    border:rem(1) solid $white;
+
+    @include mq("md"){
+        padding:rem(43) rem(22) rem(31) rem(22);
+    }
+}
+
+.explanation__gist:not(:first-child){
+    margin-top: rem(55);
+
+    @include mq("md"){
+       margin-top: rem(71);
+    }
+}
+
+.explanation__title{
+    position:absolute;
+    font-weight:$regular;
+    font-size: rem(20);
+    top: rem(-24);
+    left: rem(23);
+    letter-spacing: 0.02em;
+    border:rem(1) solid $white;
+    border-radius: rem(32);
+    padding:rem(7) rem(23);
+    background: $black;
+
+    @include mq("md"){
+       left:rem(37);
+    }
+}
+
+.explanation__text{
+    line-height: 2.19;
+    letter-spacing: 0.025em;
+}

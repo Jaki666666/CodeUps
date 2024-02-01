@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+    <title>企業概要</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="CodeUps" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jaki666666sample-wordpress.site/CodeUps/" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="CodeUps" />
+    <meta property="og:description" content="" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+
+<body class="body">
+    <header class="header" id="header">
+        <div class="header__inner">
+            <h1 class="header__title">
+                <a href="index.html">
+                    <img class="header__img" src="imgs/common/code-ups.png" alt="サイトロゴ">
+                </a>
+            </h1>
+
+            <nav class="header__nav">
+                <ul class="header__items">
+                    <li class="header__item">
+                        <a href="news-list.html">
+                            <span>
+                                お知らせ
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="header__item">
+                        <a href="content.html">
+                            <span>
+                                事業内容
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="header__item">
+                        <a href="works.html">
+                            <span>
+                                制作実績
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="header__item">
+                        <a href="overview.html">
+                            <span>
+                                企業概要
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="header__item">
+                        <a href="blog-list.html">
+                            <span>
+                                ブログ
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="header__item">
+                        <a href="contact.html">お問い合わせ</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- ハンバーガーメニュー -->
+            <div class="header__hamburger hamburger" id="hamburger">
+                <span class="hamburger__line hamburger__line--first"></span>
+                <span class="hamburger__line hamburger__line--second"></span>
+                <span class="hamburger__line hamburger__line--third"></span>
+            </div>
+
+            <!-- ドロワーメニュー -->
+            <div class="header__drawer-menu drawer-menu" id="drawer-menu">
+                <nav class="drawer-menu__nav">
+                    <ul class="drawer-menu__items">
+                        <li class="drawer-menu__item">
+                            <a href="#">トップ</a>
+                        </li>
+
+                        <li class="drawer-menu__item">
+                            <a href="news-list.html">お知らせ</a>
+                        </li>
+
+                        <li class="drawer-menu__item">
+                            <a href="content.html">事業内容</a>
+                        </li>
+
+                        <li class="drawer-menu__item">
+                            <a href="works.html">制作実績</a>
+                        </li>
+
+                        <li class="drawer-menu__item">
+                            <a href="overview.html">企業概要</a>
+                        </li>
+
+                        <li class="drawer-menu__item">
+                            <a href="blog-list.html">ブログ</a>
+                        </li>
+
+                        <li class="drawer-menu__item">
+                            <a href="contact.html">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- mv -->
+        <div class="mv">
+            <div class="mv__bg-wrapper">
+                <picture>
+                    <source srcset="imgs/common/overview-mv.jpg" media="(max-width: 767px)">
+                    <img src="imgs/common/overview-mv-pc.jpg" alt="オフィスの廊下">
+                </picture>
+
+                <h2 class="mv__title mv__title--sub-page">企業概要</h2>
+            </div>
+        </div>
+
+        <!-- パンくずリスト -->
+        <div class="bread-crumb works-bread-crumb">
+            <div class="inner">
+                <ul class="bread-crumb__items">
+                    <li class="bread-crumb__item">
+                        <a href="index.html">トップ</a>
+                    </li>
+                    <li class="bread-crumb__item">
+                        <span>></span>
+                    </li>
+                    <li class="bread-crumb__item">
+                        <span>企業概要</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="overview overview-overview">
+            <div class="overview__inner inner">
+                <dl class="overview__list">
+                    <dt class="overview__title">会社名</dt>
+                    <dd class="overview__description">テキストが入ります。</dd>
+
+                    <dt class="overview__title">設立</dt>
+                    <dd class="overview__description">テキストが入ります。</dd>
+
+                    <dt class="overview__title">資本金</dt>
+                    <dd class="overview__description">テキストが入ります。</dd>
+
+                    <dt class="overview__title">売上高</dt>
+                    <dd class="overview__description">テキストが入ります。</dd>
+
+                    <dt class="overview__title">代表者</dt>
+                    <dd class="overview__description">テキストが入ります。</dd>
+
+                    <dt class="overview__title">従業員数</dt>
+                    <dd class="overview__description">テキストが入ります。</dd>
+
+                    <dt class="overview__title">事業内容</dt>
+                    <dd class="overview__description">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
+
+                    <dt class="overview__title">所在地</dt>
+                    <dd class="overview__description">東京駅</dd>
+                </dl>
+            </div>
+
+            <iframe class="overview__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.827853707427!2d139.7645498755101!3d35.681240529973905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1692381327389!5m2!1sja!2sjp"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+        <!-- お問い合わせ -->
+        <section class="contact overview-contact" id="contact">
+            <div class="contact__inner inner">
+                <div class="contact__section-title section-title">
+                    <p class="section-title__english section-title__english--left">Contact</p>
+                    <h2 class="section-title__japanese section-title__japanese--contact">お問い合わせ</h2>
+                </div>
+
+                <p class="contact__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+
+                <div class="contact__btn-wrapper">
+                    <a class="btn btn--contact" href="contact.html">
+                        お問い合わせへ
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__top">
+            <a href="#">
+                <img class="footer__site-title" src="imgs/common/code-ups.png" alt="サイトロゴ">
+            </a>
+
+            <ul class="footer__items">
+                <li class="footer__item">
+                    <a href="news-list.html">お知らせ</a>
+                </li>
+
+                <li class="footer__item">
+                    <a href="content.html">事業内容</a>
+                </li>
+
+                <li class="footer__item">
+                    <a href="works.html">制作実績</a>
+                </li>
+
+                <li class="footer__item">
+                    <a href="overview.html">企業概要</a>
+                </li>
+
+                <li class="footer__item">
+                    <a href="blog-list.html">ブログ</a>
+                </li>
+
+                <li class="footer__item">
+                    <a href="contact.html">お問い合わせ</a>
+                </li>
+            </ul>
+        </div>
+
+        <small class="footer__copyright">© 2021 CodeUps Inc.</small>
+
+        <div class="footer__page-top-btn page-top-btn" id="page-top-btn">
+            <img id="page-top-btn__normal" class="page-top-btn__img" src="imgs/common/top-button-white.jpg"
+                alt="ページトップボタン">
+            <img id="page-top-btn__hover" class="page-top-btn__img page-top-btn__img_hover"
+                src="imgs/common/top-button-black.jpg" alt="ページトップボタン">
+        </div>
+    </footer>
+</body>
+
+</html>
