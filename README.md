@@ -22,3 +22,4 @@
 - ルートフォントをvwで設定していることからPCサイズのレイアウトをタブレットで表示させることが出来ます（remで書いた場合のみ）。
 # CodeUps
 # CodeUps
+# CodeUps-Wordpress
