@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.card-wrapper {
+    display: grid;
+    grid-row-gap:rem(24);
+
+    @include mq("md") {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap:rem(25);
+        grid-row-gap:rem(50);
+        position: relative;
+        z-index: 2;
+    }
+}

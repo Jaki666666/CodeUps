@@ -1,0 +1,61 @@
+@use "global" as *;
+
+.pagination {
+    color: $white;
+    text-align: center;
+    font-size: rem(16);
+}
+
+.pagination__inner{
+    display: flex;
+    justify-content: center;
+}
+
+.pagination__prev {
+    border: rem(1) solid $white;
+    padding-left: rem(11);
+    padding-right: rem(11);
+    letter-spacing: 0.125rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination__prev:hover {
+    background-color: $white;
+    color: $black2;
+}
+
+.pagination__page {
+    border: rem(1) solid $white;
+    padding-left: rem(7);
+    padding-right: rem(7);
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: rem(16);
+}
+
+.pagination__page:nth-child(2) {
+    margin-left: rem(23);
+}
+
+.pagination__page:hover {
+    background-color: $white;
+    color: $black2;
+}
+
+.pagination__page.is-active {
+    background: $white;
+    color: $black2;
+}
+
+.pagination__next {
+    border: rem(1) solid $white;
+    padding-left: rem(11);
+    padding-right: rem(11);
+    margin-left: rem(23);
+    letter-spacing: 0.125rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination__next:hover {
+    background-color: $white;
+    color: $black2;
+}

@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.fv {
+    position: relative;
+}
+
+.fv::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.2);
+    z-index: 0;
+  }
+
+.fv__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    font-size: rem(30);
+    letter-spacing: 0.066em;
+
+    @include mq("md"){
+       font-size: rem(35);
+    }
+}

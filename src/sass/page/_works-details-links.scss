@@ -1,9 +1,0 @@
-@use "global" as *;
-
-.works-details-links {
-    margin-top: rem(79);
-
-    @include mq("md") {
-        margin-top: rem(103);
-    }
-}

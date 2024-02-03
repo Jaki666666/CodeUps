@@ -1,0 +1,41 @@
+@use "global" as *;
+
+.page-top-btn{
+    max-width:rem(45);
+    width:100%;
+    height:rem(45);
+    position:fixed;
+    right:rem(20);
+    bottom:rem(41);
+    opacity: 0;
+    z-index: 4;
+    cursor: pointer;
+
+    @include mq("md"){
+       right:rem(31);
+       bottom:rem(32);
+    }
+}
+
+.page-top-btn--works-details{
+    opacity:1;
+}
+
+.page-top-btn__img{
+    max-width:rem(45);
+    width:100%;
+    height: inherit;
+    position:fixed;
+    right:rem(20);
+    bottom:rem(41);
+
+    @include mq("md"){
+        right:rem(31);
+        bottom:rem(32);
+     }
+}
+
+.page-top-btn__img_hover{
+    opacity:0;
+}
+

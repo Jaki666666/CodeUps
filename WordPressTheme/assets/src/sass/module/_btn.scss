@@ -1,0 +1,132 @@
+@use "global" as *;
+
+.btn {
+    font-size: rem(20);
+    color: $white;
+    letter-spacing: 0.1em;
+    position: relative;
+    display: inline-block;
+    padding-top: rem(9);
+    padding-bottom: rem(9);
+    text-align: center;
+    border: rem(1) solid $white;
+    max-width: rem(360);
+    width: 100%;
+    --translateX: -100%;
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background: $black2;
+
+    @include mq("md") {
+        letter-spacing: 0.125em;
+        font-size: rem(16);
+        padding-top: rem(17);
+        padding-bottom: rem(17);
+    }
+}
+
+.btn:hover{
+    @include mq("md"){
+       color:$black3;
+       transition: color 0.3s;
+    }
+}
+
+.btn::before {
+    content: '';
+    width: rem(360);
+    height: 100%;
+    background: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(var(--translateX));
+}
+
+.btn::after {
+    @include mq("md") {
+        content: '詳しく見る';
+        width: rem(360);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition:opacity 0.1s;
+    }
+}
+
+.btn:hover::after {
+    @include mq("md"){
+       opacity: 1;
+    }
+}
+
+.btn--news {
+    @include mq("md") {
+        max-width: rem(134);
+        border: none;
+        background: $white;
+        color: $black3;
+        padding-top: rem(3);
+        padding-bottom: rem(3);
+        letter-spacing: 0.01em;
+    }
+}
+
+.btn--news:hover{
+    @include mq("md"){
+       color:$white;
+    }
+}
+
+.btn--news::before {
+    @include mq("md"){
+        content: '';
+        width: 100%;
+        max-width: 8.375rem;
+        height: 100%;
+        background: $black2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(var(--translateX));
+    }
+}
+
+.btn--news::after {
+    @include mq("md") {
+        content: 'すべて見る';
+        width:100%;
+        max-width: 8.375rem;
+        height: 100%;
+        color: $white;
+    }
+}
+
+.btn--news:hover::after{
+    @include mq("md"){
+       opacity:1;
+    }
+}
+
+.btn--contact {
+    font-size: rem(20);
+
+    @include mq("md") {
+        padding-top: rem(15);
+        padding-bottom: rem(15);
+        letter-spacing: 0.1em;
+    }
+}
+
+.btn--contact::after {
+    @include mq("md") {
+        content: 'お問い合わせへ';
+    }
+}

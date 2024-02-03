@@ -1,0 +1,22 @@
+@use "global" as *;
+
+
+.sub-swiper .swiper-slide {
+    width: 43.468%;
+    overflow: hidden;
+    opacity: .1;
+
+    @include mq("md"){
+       width: rem(93);
+       height: rem(93);
+    }
+}
+
+.sub-swiper .swiper-slide-active {
+    opacity: 1 !important;
+}
+
+.sub-swiper .swiper-slide img {
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}

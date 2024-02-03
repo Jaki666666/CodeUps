@@ -1,0 +1,127 @@
+@use "global" as *;
+
+.form {
+    color: $white;
+    letter-spacing: 0.05em;
+}
+
+.form__inner.inner {
+    max-width: rem(640);
+
+    @include mq("md") {
+        max-width: rem(604);
+    }
+}
+
+.form__message {
+    color: $red;
+    display: none;
+    text-align: center;
+    letter-spacing: 0.125em;
+}
+
+.form__message--is-active {
+    display: block;
+}
+
+.form__items {
+    margin-top: rem(35.5);
+}
+
+.form__part {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: rem(14);
+
+    @include mq("md") {
+        display: flex;
+        position: relative;
+    }
+}
+
+.form__part:not(:first-child) {
+    margin-top: rem(34);
+
+    @include mq("md") {
+        margin-top: rem(45);
+    }
+}
+
+.form__label {
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+
+    @include mq("md") {
+        text-align: right;
+        padding-top: rem(10);
+        position: absolute;
+        left: rem(-165);
+        width: 26%;
+    }
+}
+
+.form__blank {
+    width: 100%;
+    margin-top: rem(18);
+    padding: rem(8.5) rem(9);
+    line-height: 2;
+    background: white;
+    letter-spacing: 0.05em;
+
+    @include mq("md") {
+        margin-top: rem(25);
+        padding: rem(6) rem(17);
+        margin-top: 0;
+    }
+}
+
+.form__blank::placeholder {
+    color: $gray2;
+}
+
+.form__blank--error {
+    background: #FFDCDC;
+}
+
+.form__blank--textarea {
+    resize: none;
+    height: rem(250);
+    padding-top: rem(15);
+    padding-bottom: rem(15);
+
+    @include mq("md") {
+        height: rem(300);
+        padding-top: rem(6);
+        padding-bottom: rem(6);
+    }
+}
+
+.form__btn {
+    margin-top: rem(43.5);
+    background: $white;
+    color: $black2;
+    font-size: rem(20);
+    display: flex;
+    justify-content: center;
+
+    @include mq("md") {
+        margin-top: rem(56);
+        max-width: rem(360);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: rem(16);
+    }
+}
+
+.form__btn a {
+    padding-top: rem(10);
+    padding-bottom: rem(10);
+    width: 100%;
+    text-align: center;
+
+    @include mq("md") {
+        padding-top: rem(18);
+        padding-bottom: rem(18);
+    }
+}

@@ -1,9 +1,0 @@
-@use "global" as *;
-
-.work-tab{
-    margin-top: rem(64);
-
-    @include mq("md"){
-       margin-top: rem(95);
-    }
-}
